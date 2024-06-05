@@ -14,6 +14,8 @@ let sheetPages = {
     masterlistLog: "masterlist log",
     inventory: "inventory",
     inventoryLog: "inventory log",
+    dex: "mantaodex",
+    bestiary: "bestiary",
     items: "items",
     traits: "traits",
     prompts: "prompts",
@@ -61,12 +63,42 @@ let options = {
 
     },
 
+       /* mantao dex
+    /* --------------------------------------------------------------- */
+    dex: {
+
+        sheetPage: sheetPages.dex,
+      
+        itemAmount: 12,
+        itemOrder: "asc",
+
+        filterColumn: 'Design Type',
+        searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
+        fauxFolderColumn: 'Species',
+
+    },
+
 
     /* Item Catalogue
     /* --------------------------------------------------------------- */
     items: {
 
         sheetPage: sheetPages.items,
+    
+        itemAmount: 24,
+        itemOrder: "asc",
+    
+        filterColumn: 'Rarity',
+        searchFilterParams: ['Item'],
+        fauxFolderColumn: 'Type',
+    
+    },
+
+        /* bestiary Catalogue
+    /* --------------------------------------------------------------- */
+    bestiary: {
+
+        sheetPage: sheetPages.bestiary,
     
         itemAmount: 24,
         itemOrder: "asc",
