@@ -15,21 +15,21 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    #8FB7D4;
+  --cd-primary-color:                    #c8c0b9;
   --cd-primary-text-color:               #fff;
 
   /* ============================================================= */
   /* Secondary Color
   ================================================================ */
-  --cd-secondary-color:                  #939799;
+  --cd-secondary-color:                  #b41111;
   --cd-secondary-text-color:             #fff;
 
   /* ============================================================= */
   /* Backgrounds
   ================================================================ */
-  --cd-body-background-color:            #f8f8f8;
-  --cd-content-background-color:         #ffffff;
-  --cd-faded-background-color:           #f8f8f8;
+  --cd-body-background-color:            #c8c0b9;
+  --cd-content-background-color:         #d2cdc9;
+  --cd-faded-background-color:           #e2dcd7;
 
   /* Background Extras */
   --cd-body-background-image:             url();
@@ -51,10 +51,10 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          #222222;
+  --cd-navbar-background-color:          #48433c;
   --cd-navbar-brand-color:               var(--cd-primary-color);
   --cd-navbar-brand-color-hover:         var(--cd-secondary-color);
-  --cd-navbar-text-color:                var(--cd-content-background-color);
+  --cd-navbar-text-color:               var(--cd-primary-text-color);
   --cd-navbar-link-color:                var(--cd-navbar-text-color);
   --cd-navbar-link-color-hover:          var(--cd-primary-color);
   --cd-navbar-font-family:               var(--cd-header-font-family);
@@ -75,7 +75,7 @@ body {
   /* Navbar Dropdown 
   ================================================================ */
 
-  /* Background */
+ /* Background */
   --cd-navbar-dropdown-background-color: var(--cd-navbar-background-color);
   --cd-navbar-dropdown-background-hover: var(--cd-primary-color);
 
@@ -105,7 +105,7 @@ body {
   /* Link
   ================================================================ */
 
-  --cd-link-text-color:                  #4c8ebd;
+   --cd-link-text-color:                  var(--cd-primary-color);
   --cd-link-text-color-hover:            var(--cd-secondary-color);
 
 
@@ -123,19 +123,20 @@ body {
   ================================================================ */
 
   /* Background */
-  --cd-pagination-background-color:      transparent;
-  --cd-pagination-background-hover:      transparent;
+  --cd-pagination-background-color:      var(--cd-faded-background-color);
+  --cd-pagination-background-hover:      var(--cd-primary-color);
 
   /* Text */
   --cd-pagination-text-color:            var(--cd-faded-text-color);
-  --cd-pagination-text-color-hover:      var(--cd-primary-color);
+  --cd-pagination-text-color-hover:      var(--cd-primary-text-color);
 
   /* Border */
   --cd-pagination-border-radius:         var(--cd-border-radius);
-  --cd-pagination-border-width:          0;
+  --cd-pagination-border-width:         var(--cd-border-width);
   --cd-pagination-border-style:          var(--cd-border-style);
   --cd-pagination-border-color:          var(--cd-border-color);
   --cd-pagination-border-color-hover:    var(--cd-primary-color);
+
 
 
   /* ============================================================= */
