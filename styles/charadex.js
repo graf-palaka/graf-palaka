@@ -151,36 +151,7 @@ let getLog = (log, item, key = 'id') => {
 }
 
 
-/* ================================================================ */
-/* Get a card's log
-/* ================================================================ */
-let getLog = (log, item, key = 'id') => {
-    if ($("#log-table").length != 0) {
 
-        let logArr = [];
-        log.forEach((i) => {
-            if (i[key].toLowerCase() === item[key].toLowerCase()) {
-                let newLog = {
-                    myoslot: i.myoslot,
-                    traits: i.traits,
-                };
-                logArr.push(newLog);
-            };
-        });
-
-        // Create Rows
-        let rows = [];
-        logArr.forEach((i) => {
-            let HTML = $("#log-entry").clone();
-            HTML.find(".myoslot").html(i.myoslot);
-            HTML.find(".traits").html(i.traits);
-            rows.push(HTML);
-        });
-
-        $("#log-table").html(rows);
-
-    }
-}
 
 
 
