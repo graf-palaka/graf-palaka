@@ -149,7 +149,7 @@ body {
 
   /* Text */
   --cd-card-header-font-family:          #48433c;
-   --cd-card-link-text-color:          #b41111;
+   --cd-card-link-color:          #b41111;
 
   /* Border */
   --cd-card-border-width:                var(--cd-border-width);
